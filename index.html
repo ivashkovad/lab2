@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <title>Телефонная база данных</title>
   <link rel="stylesheet" href="styles.css">
-  </head>
+  <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+</head>
 <body>
 <header>
   <h1>Управление базой клиентов</h1>
@@ -15,6 +16,11 @@
   <section class="input-section">
     <h3>Регистрация клиента</h3>
     <form id="clientForm">
+      <input type="number" id="clientId" placeholder="ID клиента" required>
+      <input type="text" id="clientFio" placeholder="ФИО" required>
+      <input type="tel" id="clientPhone" placeholder="Номер телефона" required>
+      <input type="text" id="clientAddress" placeholder="Адрес">
+      <input type="number" id="clientBalance" placeholder="Сумма на счету" step="0.01">
 
       <div class="controls">
         <button type="button" id="btnAdd">Ввести данные</button>
@@ -41,5 +47,9 @@
   </section>
 </main>
 
+<script src="js/template.js"></script>
+<script src="js/model.js"></script>
+<script src="js/view.js"></script>
+<script src="js/index.js"></script>
 </body>
 </html>

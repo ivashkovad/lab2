@@ -1,10 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Title</title>
-</head>
+  <title>Телефонная база данных</title>
+  <link rel="stylesheet" href="styles.css">
+  </head>
 <body>
+<header>
+  <h1>Управление базой клиентов</h1>
+  <img src="https://cdn-icons-png.flaticon.com/512/3059/3059518.png" alt="Logo" class="logo">
+</header>
+
+<main>
+  <section class="input-section">
+    <h3>Регистрация клиента</h3>
+    <form id="clientForm">
+
+      <div class="controls">
+        <button type="button" id="btnAdd">Ввести данные</button>
+        <button type="button" id="btnClear">Очистить форму</button>
+      </div>
+    </form>
+
+    <hr>
+
+    <div class="search-box">
+      <label for="idSelector">Выберите ID:</label>
+      <select id="idSelector">
+        <option value="">-- ID не выбран --</option>
+      </select>
+      <div class="action-buttons">
+        <button type="button" id="btnDelete">Удалить по ID</button>
+        <button type="button" id="btnShowAll">Показать все</button>
+        <button type="button" id="btnShowOne">Показать элемент по ID</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="outputContainer" class="output-section">
+  </section>
+</main>
 
 </body>
 </html>

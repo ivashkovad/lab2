@@ -25,6 +25,7 @@ form {
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
 }
 
 input, select {
@@ -32,6 +33,7 @@ input, select {
   border: 1px solid #ddd;
   border-radius: 4px;
   font-family: 'Courier Prime', monospace;
+  margin-top: 5px;
 }
 
 button {
@@ -60,3 +62,11 @@ button:hover { background-color: #2980b9; }
 
 .balance-low { color: red; font-weight: bold; }
 .balance-high { color: green; }
+
+label {
+  font-size: small;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
